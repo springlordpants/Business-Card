@@ -18,108 +18,114 @@
     </div>
 
     <div class="container-fluid">
+      <div class="row">
+
       <!-- INPUT SECTION -->
 
-      <div class="col-sm-12 col-md-6 background">
+        <div class="col-md-6 col-sm-12 background">
 
-        <form id="cardInfo" class="form-horizontal">
+          <form id="cardInfo" class="form-horizontal">
 
-          <div class="form-group">
-            <label for="inputCompany" class="col-sm-3 control-label">Company Name:</label>
-            <div class="col-sm-9">
-              <input type="text" class="form-control" id="inputCompany" onkeyup="printCompany()">
+            <div class="form-group row">
+              <label for="inputCompany" class="col-sm-3 control-label">Company Name:</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="inputCompany" onkeyup="printCompany()">
+              </div>
             </div>
+
+            <div class="form-group row">
+              <label for="inputMessage" class="col-sm-3 control-label">Company Message:</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="inputMessage" onkeyup="printMessage()">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="inputBg" class="col-sm-3 control-label">Background Color:</label>
+              <div class="col-sm-9">
+                <input type="color" class="form-control" id="inputBg" value="#ffb74d" onchange="changeBg()">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="inputText" class="col-sm-3 control-label">Text Color:</label>
+              <div class="col-sm-9">
+                <input type="color" class="form-control" id="inputText" value="#262626" onchange="changeText()">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="col-sm-3 control-label">Text Align:</label>
+              <div class="col-sm-9">
+                <input type="button" class="btn btn-info" value="Left" id="text-left" onclick="textAlign(this.id)">
+                <input type="button" class="btn btn-info" value="Center" id="text-center" onclick="textAlign(this.id)">
+                <input type="button" class="btn btn-info" value="Right" id="text-right" onclick="textAlign(this.id)">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="inputName" class="col-sm-3 control-label">Your Name:</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="inputName" onkeyup="printName()">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="inputJob" class="col-sm-3 control-label">Job Title:</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="inputJob" onkeyup="printJob()">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="inputEmail" class="col-sm-3 control-label">Email:</label>
+              <div class="col-sm-9">
+                <input type="email" class="form-control" id="inputEmail" onkeyup="printEmail()">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="inputPhone" class="col-sm-3 control-label">Phone Number:</label>
+              <div class="col-sm-9">
+                <input type="tel" class="form-control" id="inputPhone" onkeyup="printPhone()">
+              </div>
+            </div>
+
+          <div class="container-fluid row mx-auto">
+
+            <div class="form-group">
+              <div class="col-sm-3 col-sm-offset-3">
+                <input type="button" class="btn btn-info" value="Submit" onclick="formSubmit()">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-sm-3">
+                <input type="button" class="btn btn-info" value="Clear" onclick="formClear()">
+              </div>
+            </div>
+
           </div>
 
-          <div class="form-group">
-            <label for="inputMessage" class="col-sm-3 control-label">Company Message:</label>
-            <div class="col-sm-9">
-              <input type="text" class="form-control" id="inputMessage" onkeyup="printMessage()">
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label for="inputBg" class="col-sm-3 control-label">Background Color:</label>
-            <div class="col-sm-9">
-              <input type="color" class="form-control" id="inputBg" value="#ffb74d" onchange="changeBg()">
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label for="inputText" class="col-sm-3 control-label">Text Color:</label>
-            <div class="col-sm-9">
-              <input type="color" class="form-control" id="inputText" value="#262626" onchange="changeText()">
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label class="col-sm-3 control-label">Text Align:</label>
-            <div class="col-sm-9">
-              <input type="button" class="btn btn-info" value="Left" id="text-left" onclick="textAlign(this.id)">
-              <input type="button" class="btn btn-info" value="Center" id="text-center" onclick="textAlign(this.id)">
-              <input type="button" class="btn btn-info" value="Right" id="text-right" onclick="textAlign(this.id)">
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label for="inputName" class="col-sm-3 control-label">Your Name:</label>
-            <div class="col-sm-9">
-              <input type="text" class="form-control" id="inputName" onkeyup="printName()">
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label for="inputJob" class="col-sm-3 control-label">Job Title:</label>
-            <div class="col-sm-9">
-              <input type="text" class="form-control" id="inputJob" onkeyup="printJob()">
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label for="inputEmail" class="col-sm-3 control-label">Email:</label>
-            <div class="col-sm-9">
-              <input type="email" class="form-control" id="inputEmail" onkeyup="printEmail()">
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label for="inputPhone" class="col-sm-3 control-label">Phone Number:</label>
-            <div class="col-sm-9">
-              <input type="tel" class="form-control" id="inputPhone" onkeyup="printPhone()">
-            </div>
-          </div>
-
-          <div class="form-group">
-            <div class="col-sm-3 col-sm-offset-3">
-              <input type="button" value="Submit" onclick="formSubmit()">
-            </div>
-          </div>
-
-          <div class="form-group">
-            <div class="col-sm-3">
-              <input type="button" value="Clear" onclick="formClear()">
-            </div>
-          </div>
-
-        </form>
-      </div>
-
-      <!-- OUTPUT SECTION -->
-
-      <div class="col-sm-12 col-md-6">
-        <div id="card">
-          <h3 id="outputCompany">Company Name</h3>
-          <p id="outputMessage" class="small">Company Message</p>
-          <hr>
-          <p id="outputName" class="small">Your Name</p>
-          <p id="outputJob" class="small">Job Title</p>
-          <p id="outputEmail" class="small">Email:</p>
-          <p id="outputPhone" class="small">Phone:</p>
+          </form>
         </div>
+
+        <!-- OUTPUT SECTION -->
+
+        <div class="col-md-6 col-sm-12">
+          <div id="card">
+            <h3 id="outputCompany">Company Name</h3>
+            <p id="outputMessage" class="small">Company Message</p>
+            <hr>
+            <p id="outputName" class="small">Your Name</p>
+            <p id="outputJob" class="small">Job Title</p>
+            <p id="outputEmail" class="small">Email:</p>
+            <p id="outputPhone" class="small">Phone:</p>
+          </div>
+        </div>
+
+
       </div>
-
-
-
     </div>
 
   <script src="custom.js"></script>
