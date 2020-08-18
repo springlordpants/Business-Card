@@ -37,7 +37,7 @@ function printPhone() {
 }
 
 function formSubmit() {
-  if (!inputName.value) {
+  if (!inputName.value + !inputJob.value + !inputEmail.value + !inputEmail.value + !inputPhone.value + !inputMessage.value + !inputCompany.value) {
     alert('Please complete all required sections');
   }
 }

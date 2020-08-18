@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content=" width=device-width, initial-scale=1">
     <title>Class Project</title>
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="style.css">
@@ -12,7 +13,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-12">
-          <h1>Business Card Designer</h1>
+          <h1 class="doc-header">Business Card Designer</h1>
         </div>
       </div>
     </div>
@@ -42,14 +43,14 @@
 
             <div class="form-group row">
               <label for="inputBg" class="col-sm-3 control-label">Background Color:</label>
-              <div class="col-sm-9">
+              <div class="col-sm-3">
                 <input type="color" class="form-control" id="inputBg" value="#ffb74d" onchange="changeBg()">
               </div>
             </div>
 
             <div class="form-group row">
               <label for="inputText" class="col-sm-3 control-label">Text Color:</label>
-              <div class="col-sm-9">
+              <div class="col-sm-3">
                 <input type="color" class="form-control" id="inputText" value="#262626" onchange="changeText()">
               </div>
             </div>
@@ -57,9 +58,9 @@
             <div class="form-group row">
               <label class="col-sm-3 control-label">Text Align:</label>
               <div class="col-sm-9">
-                <input type="button" class="btn btn-info" value="Left" id="text-left" onclick="textAlign(this.id)">
-                <input type="button" class="btn btn-info" value="Center" id="text-center" onclick="textAlign(this.id)">
-                <input type="button" class="btn btn-info" value="Right" id="text-right" onclick="textAlign(this.id)">
+                <input type="button" class="btn btn-outline-dark" value="Left" id="text-left" onclick="textAlign(this.id)">
+                <input type="button" class="btn btn-outline-dark" value="Center" id="text-center" onclick="textAlign(this.id)">
+                <input type="button" class="btn btn-outline-dark" value="Right" id="text-right" onclick="textAlign(this.id)">
               </div>
             </div>
 
@@ -91,17 +92,17 @@
               </div>
             </div>
 
-          <div class="container-fluid row mx-auto">
+          <div class="container-fluid row button-center">
 
             <div class="form-group">
               <div class="col-sm-3 col-sm-offset-3">
-                <input type="button" class="btn btn-info" value="Submit" onclick="formSubmit()">
+                <input type="button" class="btn btn-outline-dark" value="Submit" onclick="formSubmit()">
               </div>
             </div>
 
             <div class="form-group">
               <div class="col-sm-3">
-                <input type="button" class="btn btn-info" value="Clear" onclick="formClear()">
+                <input type="button" class="btn btn-outline-dark" value="Clear" onclick="formClear()">
               </div>
             </div>
 
@@ -112,7 +113,7 @@
 
         <!-- OUTPUT SECTION -->
 
-        <div class="col-md-6 col-sm-12">
+        <div class="card-container col-md-6 col-sm-12">
           <div id="card">
             <h3 id="outputCompany">Company Name</h3>
             <p id="outputMessage" class="small">Company Message</p>
@@ -123,7 +124,6 @@
             <p id="outputPhone" class="small">Phone:</p>
           </div>
         </div>
-
 
       </div>
     </div>

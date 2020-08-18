@@ -2,20 +2,50 @@ body {
   padding: 0 100px
 }
 
+@media (max-width: 767px) {
+  body {
+    /* margin: auto; */
+    padding: 0 0;
+  }
+}
+
 h1 {
   text-align: center;
+  margin: 25px 0;
   padding: 20px 0;
 }
+
+h1, h3, p, label {
+  font-family:"times";
+  font-weight: bold;
+}
+
+.doc-header {
+  background-color: #eee;
+  padding: 5px 30px;
+  margin-left: 25%;
+  margin-right: 25%;
+  border-radius: 5px;
+}
+
 
 #card {
   width: 400px;
   height: 250px;
-  border: 1px solid;
+  /* border: 1px solid; */
+  border-radius: 5px;
+  margin-bottom: 30px;
   padding: 10px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15)
 }
 
 .background {
   background-color: #eee;
   padding: 30px;
   margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+.button-center {
+  margin: auto;
 }
