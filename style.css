@@ -15,6 +15,13 @@ h1 {
   padding: 20px 0;
 }
 
+@media (max-width: 411px) {
+  h1 {
+    font-size: 20px;
+    margin-right: 50px;
+  }
+}
+
 h1, h3, p, label {
   font-family:"times";
   font-weight: bold;
@@ -37,6 +44,16 @@ h1, h3, p, label {
   margin-bottom: 30px;
   padding: 10px;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15)
+}
+
+@media (max-width: 411px) {
+  #card {
+    width: 325px;
+    height: 250px;
+    border-radius: 2.5px;
+    margin-bottom: 20px;
+    padding: 5px;
+  }
 }
 
 .background {
